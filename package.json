@@ -1,0 +1,36 @@
+{
+  "name": "crud-api",
+  "version": "1.0.0",
+  "description": "Node.js CRUD API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "nodemon",
+    "start:prod": "npm run build && npm run prod",
+    "build": "tsc",
+    "prod": "cross-env NODE_ENV=production node build/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olgamazyuk/crud-api.git"
+  },
+  "keywords": [],
+  "author": "Olga Mazyuk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/olgamazyuk/crud-api/issues"
+  },
+  "homepage": "https://github.com/olgamazyuk/crud-api#readme",
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "@types/uuid": "^8.3.4",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.1",
+    "nodemon": "^2.0.16",
+    "ts-node": "^10.8.1",
+    "typescript": "^4.7.4",
+    "uuid": "^8.3.2",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0"
+  }
+}
